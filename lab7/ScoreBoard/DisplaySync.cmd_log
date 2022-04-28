@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog DisplaySync_drc.vf -w D:/lab7/ScoreBoard/DisplaySync.sch 
+sch2sym -intstyle ise -family kintex7 -refsym DisplaySync D:/lab7/ScoreBoard/DisplaySync.sch D:/lab7/ScoreBoard/DisplaySync.sym 

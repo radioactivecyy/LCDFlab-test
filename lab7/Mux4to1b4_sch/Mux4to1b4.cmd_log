@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Mux4to1b4_drc.vf -w D:/lab7/Mux4to1b4_sch/Mux4to1b4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Mux4to1b4 D:/lab7/Mux4to1b4_sch/Mux4to1b4.sch D:/lab7/Mux4to1b4_sch/Mux4to1b4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Mux4to1b4.vf -w C:/Users/cyy/Desktop/lab7/Mux4to1b4_sch/Mux4to1b4.sch 
+xst -intstyle ise -ifn "C:/Users/cyy/Desktop/lab7/Mux4to1b4_sch/Mux4to1b4.xst" -ofn "C:/Users/cyy/Desktop/lab7/Mux4to1b4_sch/Mux4to1b4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 Mux4to1b4.ngc Mux4to1b4.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Mux4to1b4_map.ncd Mux4to1b4.ngd Mux4to1b4.pcf 
+par -w -intstyle ise -ol high -mt off Mux4to1b4_map.ncd Mux4to1b4.ncd Mux4to1b4.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Mux4to1b4.twx Mux4to1b4.ncd -o Mux4to1b4.twr Mux4to1b4.pcf 

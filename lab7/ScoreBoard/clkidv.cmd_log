@@ -1,0 +1,3 @@
+vhdtdtfi -lang verilog -prj ScoreBoard -o D:/lab7/ScoreBoard/clkidv.tfi -lib work D:/lab7/ScoreBoard//Clkidv.v -module clkidv -template C:/XilinxISE/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work D:/lab7/ScoreBoard/Clkidv.v -lang verilog -prj ScoreBoard -o clkidv.spl -module clkidv -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkidv.spl D:/lab7/ScoreBoard/clkidv.sym 

@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4to1_drc.vf -w D:/lab7/MUX4to1/MUX4to1.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX4to1 D:/lab7/MUX4to1/MUX4to1.sch D:/lab7/MUX4to1/MUX4to1.sym 
